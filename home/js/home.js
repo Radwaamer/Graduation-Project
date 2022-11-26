@@ -1,6 +1,6 @@
 // create landing section
 function landing(){
-    fetch("../../json/pwnedItems.json")
+    fetch("../json/pwnedItems.json")
     .then(res=>res.json())
     .then(data=>{
         for(let i=0;i<4;i++){
