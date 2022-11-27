@@ -2,7 +2,7 @@
 function createFooter(){
     let footerText=`
     <div class="layout position-absolute top-0"></div>
-    <div class="container py-5 position-relative">
+    <div class="container pt-5 position-relative">
         <div class="row">
             <div class="col-md-6">
                 <ul class="links text-white">

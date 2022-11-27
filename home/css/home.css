@@ -32,3 +32,46 @@
     }
 }
 /* end landing */
+
+/* start questions */
+.questions{
+    line-height: 1.7;
+}
+.questions h2{
+    color: var(--main-color);
+    width: fit-content;
+}
+.questions h2::before,.questions h2::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 1px;
+    top: 58%;
+    background-color: #777;
+}
+.questions h2::before{
+    right: 2.5px;
+    transform: rotate(180deg);
+    transform-origin: right;
+}
+.questions h2::after{
+    left: 2.5px;
+    transform: rotate(180deg);
+    transform-origin: left;
+}
+.questions svg{
+    color: var(--main-color);
+}
+.questions .question{
+    color: rgb(112 112 112);
+}
+.questions .solution{
+    opacity: 0;
+    transition: var(--main-transition);
+    bottom: -177px;
+}
+/* .questions .solution.active{
+    opacity: 1;
+    top: 0;
+} */
+/* end questions */
