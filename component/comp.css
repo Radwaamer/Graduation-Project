@@ -53,6 +53,15 @@ p{
 nav img{
     width: 100px;
 }
+.navbar .navbar-toggler{
+    box-shadow: none;
+}
+
+@media (max-width: 300px) {
+    nav img{
+        width: 75px;
+    }
+}
 /* end nav bar */
 
 /* start footer */

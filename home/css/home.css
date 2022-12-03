@@ -32,6 +32,21 @@
     }
 }
 
+@media (max-width: 500px) {
+    html{
+        font-size: 80%;
+    }
+}
+@media (max-width: 400px) {
+    html{
+        font-size: 70%;
+    }
+}
+@media (max-width: 300px) {
+    html{
+        font-size: 54%;
+    }
+}
 @media (max-width: 767.98px) {
     .landing form input:first-child {
         width: 66% !important;
@@ -39,9 +54,6 @@
     }
     .landing form #search{
         right: 19.5%;
-    }
-    html{
-        font-size: 80%;
     }
 }
 /* end landing */
