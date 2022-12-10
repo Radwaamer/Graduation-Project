@@ -58,6 +58,7 @@
     height: 1px;
     top: 58%;
     background-color: #777;
+    z-index: -1;
 }
 .questions h2::before{
     right: 2.5px;

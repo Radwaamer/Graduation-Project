@@ -1,0 +1,184 @@
+/* start global rules */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+:root{
+    --main-color: rgb(8 0 90);
+    --secondary-color:#fff;
+    --main-transition: 0.3s;
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: none;
+}
+*::selection{
+    color: #fff;
+    background-color: var(--main-color);
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 14px;
+}
+
+html::-webkit-scrollbar-track{
+background-color: #f39d1229;
+}
+
+html::-webkit-scrollbar-thumb{
+background-color: #8d44adb4;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color: var(--main-color);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
+    background-color: rgb(114 189 234);
+    background: linear-gradient(to bottom, rgb(114 189 234), #eee);
+}
+a{
+    display: contents;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;}
+
+.parent1{
+    top: 187px;
+    width: 97%;
+    height: 156px;
+    background: var(--secondary-color);
+    box-shadow: 0px 4px 66px rgba(0, 67, 51, 0.1);
+    border-radius: 23px;
+}
+
+
+h2{
+top: -71px;
+color: var(--main-color);
+}
+
+.parent1 .txt{
+    width: 90%;
+    color: var(--main-color);
+    font-size: calc(1rem + .5vw)!important;
+}
+
+
+.stick{
+    width: 0.938rem;
+    height: 86px;
+    background: var(--main-color);
+    border-radius: 32.6816px;
+}
+
+
+h3{
+    width: 442px;
+    top: -94px;
+    left: 2px;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.child,
+.child2,
+.child3 {
+    display: flex;
+    position: relative;
+    margin-bottom: 27px;
+    width: 97%;
+    height: 82px;
+    top: 377px;
+    background: var(--secondary-color);
+    border-radius: 56.9832px;
+    
+
+}
+.child:hover,
+.child2:hover,
+.child3:hover{   
+    transition: 0.5s;
+     transform: translate(0, -10px);
+   
+}
+
+.lab1 ,
+.lab2,
+.lab3{
+    width: 36px;
+    left: 62px;
+    top: 28px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 18.965px;
+    line-height: 22px;
+    color: #838383;
+}
+
+.para,
+.para2,
+.para3{
+    width: 45%;
+    height: 25px;
+    left: 132px;
+    top: 38px;
+    font-weight: 600;
+    font-size: 20.9497px;
+    line-height: 25px;
+    color: #222222;
+}
+
+.stick1,
+.stick2,
+.stick3{
+    width: 0.471rem;
+    height: 49.44px;
+    left: 111px;
+    top: 20%;
+    background: var(--main-color);
+    border-radius: 32.6816px;
+}
+
+.colorbox ,
+.colorbox2,
+.colorbox3{ 
+padding: 2.88996px 8.66987px;
+width: 61.75px;
+height: 14.16px;
+left: 138px;
+top: 20%;
+background: var(--main-color);
+border-radius: 2.31197px;
+}
+
+.box ,
+.box2,
+.box3{
+    width: 44px;
+    height: 9px;
+    font-weight: 700;
+    font-size: 7.30003px;
+    line-height: 9px;
+    color: var(--secondary-color);
+}
+
+.child .icon,
+ .child2 .icon2,
+ .child3 .icon3 {
+    Width: 23.46px;
+    Height: 30.17px;
+    Top: 22.68px;
+    Left: 29.03px;
+    color: var(--main-color);
+}

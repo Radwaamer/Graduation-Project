@@ -6,9 +6,9 @@ function landing(){
         for(let i=0;i<4;i++){
             document.querySelector(".landing .row").innerHTML+=`
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-            <span class="text-white d-block fw-bold fs-4">${data[i]["number"].toLocaleString()}</span>
+            <span class="text-white d-block fw-bold fs-4">${data["pwnedItems"][i]["number"].toLocaleString()}</span>
             <i class="fs-3 my-2 fa-solid fa-file"></i>
-            <p>${data[i]["item"]}</p>
+            <p>${data["pwnedItems"][i]["item"]}</p>
             </div>`
         };
     });

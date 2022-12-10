@@ -34,7 +34,7 @@ html::-webkit-scrollbar-thumb:hover{
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(114 189 234);
-    background: linear-gradient(to bottom, rgb(114 189 234), #eee);
+    background: linear-gradient(to bottom, #2b9ce0, #eee);
 }
 a{
     text-decoration: none;
@@ -66,8 +66,12 @@ p{
 /* end global rules */
 
 /* start nav bar */
+nav{
+    background-color: #2b9ce0;
+}
 nav img{
     width: 100px;
+    transform: scale(2.4);
 }
 .navbar .navbar-toggler{
     box-shadow: none;
@@ -80,7 +84,7 @@ nav img{
 }
 /* end nav bar */
 
-/* start sign in */
+/* start sign in and sign up */
 .signIn,.signUp{
     z-index: 1000;
 }
@@ -112,6 +116,12 @@ nav img{
 .signUp .card .card-body form .eye-slash{
     right: 20px;
 }
+#passwordHelpBlock,.signUp .card .card-body form .pass-miss{
+    font-size: 0.7rem;
+}
+.signUp .card .card-body form .pass-miss{
+    opacity: 0;
+}
 .signIn .card .card-body form .remember-me,
 .signUp .card .card-body form .terms-of-use{
     font-size: 0.9rem;
@@ -124,6 +134,11 @@ nav img{
 .signIn .card .card-body form .login,
 .signUp .card .card-body form .reg{
     background-color: var(--main-color);
+}
+.signUp .card .card-body form .reg{
+    opacity: 0.5;
+    cursor: default;
+    transition: var(--main-transition);
 }
 
 @media (max-width: 767.98px) {
@@ -150,7 +165,7 @@ nav img{
         right: 10px;
     }
 }
-/* end sign in */
+/* end sign in and sign up */
 
 /* start footer */
 footer .layout{
