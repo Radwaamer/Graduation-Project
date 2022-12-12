@@ -1,6 +1,6 @@
 // create team section
 function team(){
-    fetch("../../json/teams.json")
+    fetch("../json/teams.json")
     .then(res=>res.json())
     .then(data=>{
         for(let i=0;i<Object.keys(data).length;i++){
