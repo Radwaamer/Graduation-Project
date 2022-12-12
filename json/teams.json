@@ -1,0 +1,91 @@
+{
+    "Security Team":[
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        },
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        }
+    ],
+    "Back-End Developers":[
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        },
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        },
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        }
+    ],
+    "Front-End Developers":[
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        },
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        }
+    ],
+    "UI & UX":[
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        },
+        {
+            "id":1,
+            "img":"../files/imgs/team.jpg",
+            "name":"Ramez Safwat",
+            "job-title":"Information Security Engineer",
+            "mail":"rororado44@gmail.com",
+            "git":"https://github.com/Radwaamer",
+            "linkedin":"linkedin.com/in/radwa-amer-123310217"
+        }
+    ]
+}

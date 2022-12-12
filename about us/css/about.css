@@ -1,0 +1,34 @@
+/* start about */
+.about h3{
+    color: var(--main-color);
+}
+.about .text{
+    max-width: 700px;
+    line-height: 1.2;
+}
+.about .image{
+    max-width: 400px;
+}
+/* end about */
+
+/* start team */
+.teams .card{
+    box-shadow: black 3px 8px 23px -5px;
+    max-width: 226px;
+}
+.teams .card:hover{
+    transform: scale(1.01);
+}
+.teams .card img{
+    filter: grayscale();
+}
+.teams .card .card-title{
+    color: var(--main-color);
+}
+.teams .card .card-text{
+    font-size: 0.8rem;
+}
+.teams .card .icons svg{
+    background-color: var(--main-color);
+}
+/* end team */

@@ -47,6 +47,28 @@ ul{
 p{
     margin: 0;
 }
+.main-head{
+    color: var(--main-color);
+    width: fit-content;
+}
+.main-head::before,.main-head::after{
+    content: "";
+    position: absolute;
+    width: 2000%;
+    height: 1px;
+    top: 58%;
+    background-color: #777;
+}
+.main-head::before{
+    right: -20px;
+    transform: rotate(180deg);
+    transform-origin: right;
+}
+.main-head::after{
+    left: -20px;
+    transform: rotate(180deg);
+    transform-origin: left;
+}
 
 @media (max-width: 500px) {
     html{
