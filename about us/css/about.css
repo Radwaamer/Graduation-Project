@@ -7,7 +7,7 @@
     line-height: 1.2;
 }
 .about .image{
-    max-width: 400px;
+    max-width: 320px;
 }
 /* end about */
 
@@ -32,3 +32,33 @@
     background-color: var(--main-color);
 }
 /* end team */
+
+/* start mission */
+.mission h3{
+    color: var(--main-color);
+}
+.mission .box .desc{
+    line-height: 1.8;
+}
+.mission .card{
+    background-color: #2b9ce0;
+    max-width: 270px;
+    transition: var(--main-transition);
+    box-shadow: black 3px 8px 42px -20px;
+}
+.mission .card:hover{
+    transform: scale(1.02);
+}
+.mission .card .card-img-top{
+    background-color: var(--main-color);
+    width: 60px;
+    height: 60px;
+}
+.mission .card .card-body a svg{
+    transition: var(--main-transition);
+    transform: translateX(3px);
+}
+.mission .card .card-body a:hover svg{
+    transform: translateX(7px);
+}
+/* end mission */

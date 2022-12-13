@@ -117,9 +117,12 @@ nav img{
     max-width: 500px;
 }
 .signIn .card .exit,.signUp .card .exit{
-    background-color: var(--main-color);
-    top: -23px;
-    right: -20px;
+    top: 15px;
+    right: 20px;
+    transition: var(--main-transition);
+}
+.signIn .card .exit:hover,.signUp .card .exit:hover{
+    color: #f44336cd;
 }
 .signIn .card img,.signUp .card img{
     width: 100px;

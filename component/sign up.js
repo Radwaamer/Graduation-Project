@@ -5,7 +5,7 @@ function signUpSection(){
         <div class="card w-50 mx-auto position-fixed top-50 start-50 translate-middle">
             <div class="card-body position-relative">
                 <img class="rounded-circle img-fluid position-absolute start-50 translate-middle-x" src="../files/imgs/logo.png" alt="">
-                <div class="exit position-absolute rounded-circle text-white p-2 px-3 fs-5 fw-bold" role="button">X</div>
+                <div class="exit position-absolute fs-3 fw-bold" role="button">X</div>
                 <h5 class="card-title text-uppercase fw-semibold mt-5">Create your account :</h5>
                 <form action="">
                     <input class="w-100 p-2 border-top-0 border-end-0 my-3" type="text" name="name" id="username-signup" placeholder="User Name" required>
@@ -48,6 +48,9 @@ signUpSection();
 function signUp(){
     document.querySelector("nav .sign-up-btn").addEventListener("click",()=>{
         document.querySelector(".signUp").classList.remove("d-none");
+    });
+    document.querySelector(".signUp .layout").addEventListener("click",()=>{
+        document.querySelector(".signUp").classList.add("d-none");
     });
     document.querySelector(".signUp .card .exit").addEventListener("click",()=>{
         document.querySelector(".signUp").classList.add("d-none");

@@ -5,7 +5,7 @@ function signInSection(){
     <div class="card w-50 mx-auto position-fixed top-50 start-50 translate-middle">
         <div class="card-body position-relative">
             <img class="rounded-circle img-fluid position-absolute start-50 translate-middle-x" src="../files/imgs/logo.png" alt="">
-            <div class="exit position-absolute rounded-circle text-white p-2 px-3 fs-5 fw-bold" role="button">X</div>
+            <div class="exit position-absolute fs-3 fw-bold" role="button">X</div>
             <h5 class="card-title text-uppercase fw-semibold mt-5">Account login :</h5>
             <form action="">
                 <input class="w-100 p-2 border-top-0 border-end-0 my-3" type="email" name="email" id="mail-login" placeholder="Enter Your E-mail Or User name" required>
@@ -39,6 +39,9 @@ signInSection();
 function signIn(){
     document.querySelector("nav .sign-in-btn").addEventListener("click",()=>{
         document.querySelector(".signIn").classList.remove("d-none");
+    });
+    document.querySelector(".signIn .layout").addEventListener("click",()=>{
+        document.querySelector(".signIn").classList.add("d-none");
     });
     document.querySelector(".signIn .card .exit").addEventListener("click",()=>{
         document.querySelector(".signIn").classList.add("d-none");

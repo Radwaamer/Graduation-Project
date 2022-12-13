@@ -6,7 +6,7 @@ function createFooter(){
         <div class="row">
             <div class="col-md-6">
                 <ul class="links text-white">
-                    <li class="mb-3"><a class="text-white fw-bold support" href="mailto:rororado44@gmail.com"><span class="fs-5">Support</span> @ secure space .com</a></li>
+                    <li class="mb-3"><a class="text-white fw-bold support" href="mailto:rororado44@gmail.com"><span class="fs-5">Support</span> @ secure labs .com</a></li>
                     <li class="mb-1"><a class="text-white d-block w-75" href="#">Privacy</a></li>
                     <li class="mb-1"><a class="text-white d-block w-75" href="#">Terms</a></li>
                     <li class="mb-1"><a class="text-white d-block w-75" href="#">Team</a></li>
@@ -19,7 +19,7 @@ function createFooter(){
                     <a href="#"><i class="fa-brands fa-twitter text-white fs-4 me-3"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in text-white fs-4"></i></a>
                 </div>
-                <p class="text-white-50">© 2022 secure space </p>
+                <p class="text-white-50">© 2022 secure labs </p>
             </div>
         </div>
     </div>`;
