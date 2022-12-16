@@ -225,7 +225,7 @@ nav{
 }
 nav img{
     width: 100px;
-    transform: scale(2.4);
+    transform: scale(1.4);
 }
 .navbar .navbar-toggler{
     box-shadow: none;
@@ -249,8 +249,8 @@ nav img{
     max-width: 500px;
 }
 .signIn .card .exit,.signUp .card .exit{
-    top: 15px;
-    right: 20px;
+    top: 1rem;
+    right: 1rem;
     transition: var(--main-transition);
 }
 .signIn .card .exit:hover,.signUp .card .exit:hover{
@@ -305,11 +305,6 @@ nav img{
     }
 }
 @media (max-width: 300px) {
-    .signIn .card .exit,
-    .signUp .card .exit{
-        top: -11px;
-        right: -9px;
-    }
     .signIn .card img,
     .signUp .card img{
         width: 65px;
