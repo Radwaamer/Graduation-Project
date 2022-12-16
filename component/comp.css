@@ -151,6 +151,7 @@ p{
 
 #secure>span{
 	font-size: 4rem;
+    font-weight: 900;
 	font-family: "franklin gothic medium",sans-serif;
 	display: inline-block;
 	animation:flip 2.6s infinite linear;
@@ -202,7 +203,7 @@ p{
     transition: var(--main-transition);
     color: var(--main-color);
     bottom: -50px;
-    right: 20px;
+    right: 10px;
 }
 .up:hover{
     animation: ups infinite 1.2s linear;
