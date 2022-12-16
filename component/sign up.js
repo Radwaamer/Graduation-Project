@@ -11,7 +11,7 @@ function signUpSection(){
                     <input class="w-100 p-2 border-top-0 border-end-0 my-3" type="text" name="name" id="username-signup" placeholder="User Name" required>
                     <input class="w-100 p-2 border-top-0 border-end-0 my-3" type="email" name="email" id="mail-signup" placeholder="E-mail" required>
                     <div class="position-relative">
-                        <input class="p-2 pe-5 w-100 border-top-0 border-end-0 mt-3" type="password" name="password" id="pass-signup" placeholder="Password" required>
+                        <input class="p-2 pe-5 w-100 border-top-0 border-end-0 mt-3" type="password" name="password" id="pass-signup" placeholder="Password" required maxlength="20" minlength="8">
                         <div class="eye-slash position-absolute top-50 translate-middle-y" role="button"><i class="fa-solid fa-eye-slash"></i></div>
                         <div class="eye d-none position-absolute top-50 translate-middle-y" role="button"><i class="fa-solid fa-eye"></i></div>
                     </div>
@@ -19,7 +19,7 @@ function signUpSection(){
                         Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                     </div>
                     <div class="position-relative">
-                        <input class="p-2 pe-5 w-100 border-top-0 border-end-0 mt-2" type="password" name="re-password" id="re-pass" placeholder="Repeat Password" required>
+                        <input class="p-2 pe-5 w-100 border-top-0 border-end-0 mt-2" type="password" name="re-password" id="re-pass" placeholder="Repeat Password" required maxlength="20" minlength="8">
                         <div class="eye-slash position-absolute top-50 translate-middle-y" role="button"><i class="fa-solid fa-eye-slash"></i></div>
                         <div class="eye d-none position-absolute top-50 translate-middle-y" role="button"><i class="fa-solid fa-eye"></i></div>
                     </div>
@@ -81,6 +81,17 @@ function eyeIcon(){
     });
 };
 eyeIcon();
+
+// password length
+function passLength(){
+    let inputProgress=document.querySelector(".progress input");
+    let progress=document.querySelector(".progress span");
+    let progressNumber=document.querySelector(".progress p");
+    inputProgress.oninput=()=>{
+        progressNumber.innerHTML=35-inputProgress.value.length;
+        progress.style.width=(inputProgress.value.length/35)*100+"%";
+    }
+}
 
 // repeat password
 function repeatPassword(){

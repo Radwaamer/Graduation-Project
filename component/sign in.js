@@ -10,7 +10,7 @@ function signInSection(){
             <form action="">
                 <input class="w-100 p-2 border-top-0 border-end-0 my-3" type="email" name="email" id="mail-login" placeholder="Enter Your E-mail Or User name" required>
                 <div class="position-relative">
-                    <input class="p-2 pe-5 w-100 border-top-0 border-end-0 mt-3" type="password" name="password" id="pass-login" placeholder="Enter Your Password" required>
+                    <input class="p-2 pe-5 w-100 border-top-0 border-end-0 mt-3" type="password" name="password" id="pass-login" placeholder="Enter Your Password" required maxlength="20" minlength="8">
                     <div class="eye-slash position-absolute top-50 translate-middle-y" role="button"><i class="fa-solid fa-eye-slash"></i></div>
                     <div class="eye d-none position-absolute top-50 translate-middle-y" role="button"><i class="fa-solid fa-eye"></i></div>
                 </div>
