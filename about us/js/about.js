@@ -30,3 +30,18 @@ function team(){
     });
 };
 team();
+
+// bullets
+function bullets(){
+    let bullets = document.querySelectorAll(".bullets div");
+    bullets.forEach((bullet)=>{
+        bullet.addEventListener("click",(e)=>{
+            bullets.forEach(bull=>{
+                bull.style.backgroundColor="transparent";
+            });
+            document.querySelector(e.target.dataset.move).scrollIntoView({behavior:'smooth'});
+            bullet.style.backgroundColor="var(--main-color)";
+        });
+    });
+}
+bullets();

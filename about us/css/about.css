@@ -1,3 +1,43 @@
+/* start bullets */
+.bullets{
+    z-index: 200;
+}
+.bullets div{
+    width: 15px;
+    height: 15px;
+    border: 3px solid var(--main-color);
+}
+.bullets div::after{
+    content: attr(data-show);
+    top: 50%;
+    left: -145px;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: var(--main-color);
+    width: 120px;
+    text-align: center;
+    padding: 7px;
+    color: white;
+    display: none;
+    pointer-events: none;
+    border-radius: 10px;
+}
+.bullets div::before{
+    content: "";
+    border: transparent 10px solid;
+    border-left-color: var(--main-color);
+    position: absolute;
+    left: -17px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    pointer-events: none;
+}
+.bullets div:hover::before,.bullets div:hover::after{
+    display: block;
+}
+/* end bullets */
+
 /* start about */
 .about h3{
     color: var(--main-color);

@@ -87,6 +87,137 @@ p{
 }
 /* end global rules */
 
+/* start loader */
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #2b9ce0, #eee);
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+}
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader .box {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    animation: animate .5s linear infinite;
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+}
+
+#loader .shadow { 
+    width: 50px;
+    height: 5px;
+    background: #000;
+    opacity: 0.1;
+    position: absolute;
+    top: 59px;
+    border-radius: 50%;
+    animation: shadow .5s linear infinite;
+}
+
+@keyframes animate {
+    17% { border-bottom-right-radius: 3px; }
+    25% { transform: translateY(9px) rotate(22.5deg); }
+    50% {
+    transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+    border-bottom-right-radius: 40px;
+    }
+    75% { transform: translateY(9px) rotate(67.5deg); }
+    100% { transform: translateY(0) rotate(90deg); }
+} 
+@keyframes shadow {
+    50% {
+        transform: scale(1.2,1);
+    }
+}
+
+#secure{
+	-webkit-perspective:700px;
+	perspective: 700px;
+    margin-top: 60px;
+}
+
+#secure>span{
+	font-size: 60px;
+	font-family: "franklin gothic medium",sans-serif;
+	display: inline-block;
+	animation:flip 2.6s infinite linear;
+	transform-origin:0 70%;
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+    color: var(--main-color);
+}
+
+@keyframes flip{
+	35%{
+		transform: rotateX(360deg);
+	}
+	100%{
+		transform: rotatex(360deg);
+	}
+}
+
+
+#secure>span:nth-child(even){
+	color:white;
+
+}
+
+#secure>span:nth-child(2){
+	animation-delay: 0.3s;
+}
+
+#secure>span:nth-child(3){
+	animation-delay: 0.6s;
+}
+
+#secure>span:nth-child(4){
+	animation-delay: 0.9s;
+}
+
+#secure>span:nth-child(5){
+	animation-delay: 1.2s;
+}
+
+#secure>span:nth-child(6){
+	animation-delay: 1.5s
+}
+/* end loader */
+
+/* start arrow */
+.up{
+    z-index: 1000;
+    transition: var(--main-transition);
+    color: var(--main-color);
+    bottom: -50px;
+    right: 20px;
+}
+.up:hover{
+    animation: ups infinite 1.2s linear;
+}
+
+@keyframes ups {
+    50%{
+        transform: translateY(-6px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* end arrow */
+
 /* start nav bar */
 nav{
     background-color: #2b9ce0;
