@@ -21,75 +21,90 @@
 <body>
   <!-- loader -->
   <script src="../component/loader.js"></script>
-    
-    <div class="contact">
-        <div class="container">
-          <div class="box">
-            <img class="image" src="../contact us/img/contact-us-customer-support-hotline-people-connect-call-custo-contact-us-customer-support-hotline-people-connect-call-customer-130733557.jpg" alt="" />
-            <form>
-              <label class="name" for="fname"> Name</label>
-              <input
-                class="fname"
-                type="text"
-                id="fname"
-                name="name"
-                placeholder=" Enter your name.."
-              />
-              <label class="email" for="E-mail">Email</label>
-              <input
-                class="E-mail"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your E-mail .."
-              />
-              <label class="msg" for="message">Message</label>
-              <input
-                class="message"
-                type="text"
-                id="msg"
-                name="message"
-                placeholder="type your message here .."
-              />
-            </form>
-            <button type="button" class="btn1 btn-primary"> <p class="access"> Submit </p></button>
+
+  <!-- start contact us -->
+  <div class="contact my-5">
+    <div class="container text-capitalize">
+      <div class="contact-form p-4 rounded-3 bg-white text-dark" >
+        <div class="row align-items-center pt-4">
+          <div class="col-lg-5">
+            <img class="image w-100" src="../files/imgs/contact.jpg" alt="Contact-Us" />
           </div>
-  
+          <div class="col-lg-7">
+            <form >
+              <div class="d-flex gap-4">
+                <div class="w-100">
+                  <label for="validationCustom01" class="form-label text-black-50 mb-2">name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Your Name..." required>
+                </div>
+                <div class="w-100">
+                  <label for="exampleInputEmail1" class="input text-black-50 mb-2">Email</label>
+                  <input type="email" class="email form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email..." required >
+                </div>
+              </div>
+              <div>
+                <label class="msg text-black-50 mb-2 mt-4" for="message">Message</label>
+                <textarea class="form-control" name="message" id="msg" cols="30" rows="10" placeholder="type your message here .." required></textarea>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="submit btn text-uppercase text-white px-5 mt-4">submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-  
-  <div class="feature">
-    <h3>our contacts</h3>
-      <div class="box2">
-        
-        <li>
-          <p class="our-discord"> Discord Channel <br> @secure lab</p>
-          <a href="#" class="discord">
-            
-            <i class="fa-brands fa-discord"></i>
-            
-          </a>
-          
-        </li>
-        <li>
-          <p class="our-email"> Email <br> The @ secure labs.net </p>
-          <a href="#" class="Email23">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-        </li>
-        
-        <li>
-          <p class="our-telegram"> Telegram <br>  @Secure labs</p>
-          <a href="#" class="telegram">
-            <i class="fa-brands fa-telegram"></i>
-          </a>
-        </li>
-  
-      </div>
-   
+    </div>
   </div>
+  <!-- end contact us -->
 
 
-  <br><br><br><br><br><br><br><br><br>
+  <!-- start our contacts -->
+  <div class="contacts my-4 overflow-hidden">
+    <div class="container">
+      <h2 class="main-head mx-auto fw-bold mb-5 position-relative">Our contacts</h2>
+      <div class="links pt-5 pb-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div class="info justify-content-center align-items-center">
+                <div class="d-flex gap-3 align-items-center">
+                  <a href="mailto:rororado44@gmail.com"><i class="fa-brands fa-discord fs-3 text-primary border rounded-circle p-3"></i></a>
+                  <div class="fw-bold text-black-50 fs-5">
+                    <p class="our-discord">Discord Channel</p>
+                    <a href="mailto:rororado44@gmail.com" class="discord text-black-50">@secure lab</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div class="info justify-content-center align-items-center">
+                <div class="d-flex gap-3 align-items-center">
+                  <a href="mailto:rororado44@gmail.com"><i class="fa-regular fa-envelope fs-3 text-primary border rounded-circle p-3"></i></a>
+                  <div class="fw-bold text-black-50 fs-5">
+                    <p class="our-email">Email</p>
+                    <a href="mailto:rororado44@gmail.com" class="discord text-black-50">The @ secure labs.net</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div class="info justify-content-center align-items-center">
+                <div class="d-flex gap-3 align-items-center">
+                  <a href="mailto:rororado44@gmail.com"><i class="fa-brands fa-telegram fs-3 text-primary border rounded-circle p-3"></i></a>
+                  <div class="fw-bold text-black-50 fs-5">
+                    <p class="our-email">Telegram</p>
+                    <a href="mailto:rororado44@gmail.com" class="discord text-black-50">@Secure labs</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end our contacts -->
+
+
+
     <!-- font awesome js -->
     <script src="../files/js/all.min.js"></script>
     <script src="https://kit.fontawesome.com/c7495e3692.js" crossorigin="anonymous"></script>

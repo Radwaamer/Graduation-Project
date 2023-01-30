@@ -1,178 +1,24 @@
-.box{
-    position: relative;
-    width: 97%;
-    height: 508px;
-    left: 52px;
-    top: 37px;
-    background: var(--secondary-color);
-    box-shadow: 0px 4px 66px rgb(0 67 51 / 10%);
-    border-radius: 23px;
+/* start contact us */
+.contact .contact-form form .form-control:focus{
+  box-shadow: none;
+  border-color: var(--main-color);
 }
+.contact .contact-form form .submit{
+  background-color: var(--main-color);
+}
+.contact .contact-form form input::placeholder{
+  font-size: 0.8rem;
+}
+.contact .contact-form form textarea{
+  font-size: 0.9rem;
+}
+/* end contact us */
 
-.image{
-    position: absolute;
-    width: 35%;
-    height: 346px;
-    left: 4%;
-    top: 95px;
+/* start our contacts */
+.contacts h2{
+  color: var(--main-color);
 }
-
-.fname,
- .E-mail,
-.message { 
-    position: absolute;
-    width: 21%;
-    height: 61px;
-    left: 45%;
-    top: 148px;
-    border: 2px solid #D9D9D9;
-    border-radius: 5px;
+.contacts .links .row .info svg{
+  border-color: var(--main-color) !important;
 }
-.E-mail{
-    left: 75%;
-    top: 148px;
-}
- .message{
-  position: absolute;
-  width: 50%;
-    height: 175px;
-    top: 253px;
-    left: 45%;
-}
-.name,
-.email,
-.msg{
-    position: absolute;
-width: 54px;
-height: 23px;
-left: 45%;
-top: 98px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-color: #D9D9D9;
-}
-
-.email{
-   
-    left: 75%;
-    top: 99;
-}
-
-.msg{
-    width: 82px;
-    top: 220px;
-    
-   
-}
-
-
-.btn1{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px 34px;
-    gap: 10px;
-    width: 245px;
-    height: 49px;
-    right: 17px;
-    bottom: 16px;
-    background-color: var(--main-color);
-    border-radius: 5px;
-}
-.btn1:hover{
-    background-color: #1877f2;
-    transition: var(--main-transition);
-    transform: translate(0, -10px);
-}
-
-.access{
-    width: 165px;
-    position: absolute;
-height: 29px;
-text-transform: capitalize;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 29px;
-color: var(--secondary-color);
-}
-
-.child{
-  position: relative;
-
-    
-}
-
-h3{
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 37px;
-    line-height: 2px;
-    color: var(--main-color);
-    width: 216px;
-    height: 137px;
-    left: 44%;
-    top: 109px;
-}
-
-
- .box2 { 
-    display: inline-flex;
-    align-items: center;
-    position: absolute;
-    list-style: none;
-    width: 81%;
-    justify-content: space-around;
-    top: 790px;
-    left: 6%;
-    text-align: center;
-    
-}
-  
- 
-    .box2 li a {
-     border: 10px solid var(--main-color); 
-    border-radius: 50% solid var(--main-color);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    transition: var(--main-transition);
-  }
-    .box2 .discord:hover,
-    .box2 .Email23:hover,
-    .box2 .telegram:hover
-    {
-        transform: translate(0, -10px);
-    background-color: #1877f2;
-  }
-   .box2 .discord ,
-   .box2 .Email23,
-   .box2 .telegram
-    {
-     padding: 5px;
-    border: 2px solid var(--main-color);
-    border-radius: 50% ;
-  }
-
-  .our-email, 
-  .our-discord,
-  .our-telegram{
-    position: absolute;
-    width: 21%;
-    margin-left: 55px;
-    justify-content: space-between;
-    text-align: start;
-  }
+/* end our contacts */
