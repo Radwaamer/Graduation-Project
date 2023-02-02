@@ -1,7 +1,10 @@
 /* start labs */
+.labs h2{
+    color: var(--main-color);
+}
 .labs .parent .stick {
     width: 0.938rem;
-    height: 59%;
+    height: 60%;
     background: var(--main-color);
     border-radius: 32.6816px;
 }
