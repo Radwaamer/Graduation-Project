@@ -37,8 +37,10 @@ signInSection();
 
 // sign in popup
 function signIn(){
-    document.querySelector("nav .sign-in-btn").addEventListener("click",()=>{
-        document.querySelector(".signIn").classList.remove("d-none");
+    document.querySelectorAll("nav .sign-in-btn").forEach(sign=>{
+        sign.addEventListener("click",()=>{
+            document.querySelector(".signIn").classList.remove("d-none");
+        });
     });
     document.querySelector(".signIn .layout").addEventListener("click",()=>{
         document.querySelector(".signIn").classList.add("d-none");

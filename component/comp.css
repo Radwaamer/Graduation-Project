@@ -236,6 +236,15 @@ nav img{
         width: 75px;
     }
 }
+@media (max-width: 992px) {
+    nav .navbar-collapse li{
+        border-top: 1px solid rgb(112 112 112);
+    }
+    nav .navbar-collapse li:hover a{
+        transition: var(--main-transition);
+        transform: translateX(10px);
+    }
+}
 /* end nav bar */
 
 /* start sign in and sign up */

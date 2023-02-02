@@ -46,8 +46,10 @@ signUpSection();
 
 // sign up popup
 function signUp(){
-    document.querySelector("nav .sign-up-btn").addEventListener("click",()=>{
-        document.querySelector(".signUp").classList.remove("d-none");
+    document.querySelectorAll("nav .sign-up-btn").forEach(sign=>{
+        sign.addEventListener("click",()=>{
+            document.querySelector(".signUp").classList.remove("d-none");
+        });
     });
     document.querySelector(".signUp .layout").addEventListener("click",()=>{
         document.querySelector(".signUp").classList.add("d-none");
