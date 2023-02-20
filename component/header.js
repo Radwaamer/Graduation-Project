@@ -27,13 +27,13 @@ function createHeader(){
                     <a class="nav-link dropdown-toggle text-white rounded-2" href="cmklmlkd" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         About Us
                     </a>
-                    <ul class="dropdown-menu text-capitalize">
-                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="../about us/about.html">Who we are</a></li>
-                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="../about us/mission.html">our mission</a></li>
-                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="../about us/team.html">team</a></li>
-                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="kfk">privacy</a></li>
-                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="f,v,mc">terms</a></li>
-                        <li><a class="dropdown-item nav-link text-white" href="fmvm,r">our mission</a></li>
+                    <ul class="dropdown-menu text-capitalize bg-white">
+                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/about.html">Who we are</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/mission.html">our mission</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/team.html">team</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="kfk">privacy</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="f,v,mc">terms</a></li>
+                        <li><a class="dropdown-item nav-link black-color" href="fmvm,r">our mission</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
