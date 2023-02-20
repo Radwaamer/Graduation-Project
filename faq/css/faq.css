@@ -1,0 +1,25 @@
+/* start questions */
+.questions{
+    line-height: 1.7;
+}
+.questions .faq{
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+.questions .faq img{
+    width: 39rem;
+    top: -7rem;
+}
+.questions .faq > ul{
+    margin-right: 24rem;
+}
+.questions svg{
+    color: var(--main-color);
+}
+.questions .solution{
+    opacity: 0;
+    transition: var(--main-transition);
+    bottom: -177px;
+    background-color: #ffffff1a;
+}
+/* end questions */

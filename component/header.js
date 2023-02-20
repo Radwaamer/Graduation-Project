@@ -1,30 +1,43 @@
 // create header section
 function createHeader(){
-    let headerText=`<nav class="navbar navbar-expand-lg border-bottom border-secondary py-0">
+    let headerText=`<nav class="navbar navbar-expand-lg py-0">
     <div class="container">
-        <a class="navbar-brand overflow-hidden" href="../home/home.html"><img src="../files/imgs/logo.png" alt="Secure Labs"></a>
+        <a class="navbar-brand overflow-hidden py-3" href="../home/home.html"><img src="../files/imgs/logo.png" alt="Secure Labs"></a>
         <div class="sign d-flex d-lg-none gap-2 me-4 ms-auto justify-content-end">
             <button class="btn sign-in-btn bg-white px-4 fw-semibold">Sign In</button>
             <button class="btn sign-up-btn bg-white px-4 fw-semibold">Sign Up</button>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler border-white px-3 py-2" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars text-white fs-5"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-1 mb-lg-0 fw-bold">
+            <ul class="navbar-nav ms-auto me-auto mb-1 mb-lg-0 fw-bold border-bottom gap-lg-5 py-lg-2">
                 <li class="nav-item">
-                    <a class="nav-link" href="../home/home.html">Home</a>
+                    <a class="nav-link text-white rounded-2" href="../home/home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../labs/labs.html">Labs</a>
+                    <a class="nav-link text-white rounded-2" href="../labs/labs.html">Labs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../contact us/contact.html">Contact Us</a>
+                    <a class="nav-link text-white rounded-2" href="../contact us/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white rounded-2" href="cmklmlkd" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu text-capitalize">
+                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="../about us/about.html">Who we are</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="../about us/mission.html">our mission</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="../about us/team.html">team</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="kfk">privacy</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link text-white" href="f,v,mc">terms</a></li>
+                        <li><a class="dropdown-item nav-link text-white" href="fmvm,r">our mission</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../about us/about.html">About Us</a>
+                    <a class="nav-link text-white rounded-2" href="../faq/faq.html">FAQ</a>
                 </li>
             </ul>
         </div>

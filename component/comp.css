@@ -1,8 +1,13 @@
 /* start global rules */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 :root{
-    --main-color: rgb(8 0 90);
+    --main-color: #3ab8ff;
+    --secondary-color:rgba(22,10,60,1);
+    --black-color: #3e4a61;
     --main-transition: 0.3s;
+}
+.black-color{
+    color: var(--black-color);
 }
 *{
     box-sizing: border-box;
@@ -21,20 +26,19 @@ html::-webkit-scrollbar{
     width: 16px;
 }
 html::-webkit-scrollbar-track{
-    background-color: rgba(8, 0, 90, 0.311);
+    background-color: #3ab7ff68;
     box-shadow: 0 0 12px #333 inset;
 }
 html::-webkit-scrollbar-thumb{
-    background-color: rgba(8, 0, 90, 0.69);
+    background-color: rgba(39, 37, 37, 0.858);
     border-radius: 30px;
 }
 html::-webkit-scrollbar-thumb:hover{
-    background-color: var(--main-color);
+    background-color: #dbd8e38d;
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(114 189 234);
-    background: linear-gradient(to bottom, #2b9ce0, #eee);
+    background: rgb(22,10,60);
 }
 a{
     text-decoration: none;
@@ -48,26 +52,9 @@ p{
     margin: 0;
 }
 .main-head{
+    font-weight: bold;
     color: var(--main-color);
-    width: fit-content;
-}
-.main-head::before,.main-head::after{
-    content: "";
-    position: absolute;
-    width: 2000%;
-    height: 1px;
-    top: 58%;
-    background-color: #777;
-}
-.main-head::before{
-    right: -20px;
-    transform: rotate(180deg);
-    transform-origin: right;
-}
-.main-head::after{
-    left: -20px;
-    transform: rotate(180deg);
-    transform-origin: left;
+    margin-bottom: 1.5rem;
 }
 
 @media (max-width: 500px) {
@@ -92,7 +79,7 @@ p{
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, #2b9ce0, #eee);
+    background: linear-gradient(270deg, var(--secondary-color) 0%, rgb(69, 61, 161) 100%);
     width: 100vw;
     height: 100vh;
     z-index: 99999;
@@ -158,7 +145,7 @@ p{
 	transform-origin:0 70%;
 	transform-style:preserve-3d;
 	-webkit-transform-style:preserve-3d;
-    color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 @keyframes flip{
@@ -220,20 +207,27 @@ p{
 /* end arrow */
 
 /* start nav bar */
-nav{
-    background-color: #2b9ce0;
-}
 nav img{
-    width: 100px;
-    transform: scale(1.4);
+    width: 11rem;
+}
+nav ul a:hover,nav ul a.active{
+    color: var(--black-color) !important;
+    background-color: white !important;
+    transition: var(--main-transition);
+
 }
 .navbar .navbar-toggler{
     box-shadow: none;
 }
+nav .dropdown-menu{
+    width: 13rem;
+    top: 114% !important;
+    background-color: var(--secondary-color);
+}
 
 @media (max-width: 300px) {
     nav img{
-        width: 75px;
+        width: 10rem;
     }
 }
 @media (max-width: 992px) {
@@ -248,33 +242,43 @@ nav img{
 /* end nav bar */
 
 /* start sign in and sign up */
-.signIn,.signUp{
+.signIn,.signUp,.forgetPass{
     z-index: 1000;
 }
-.signIn .layout,.signUp .layout{
+.signIn .layout,.signUp .layout,.forgetPass .layout{
     background-color: rgba(51, 51, 51, 0.701);
 }
-.signIn .card,.signUp .card{
+.signIn .card,.signUp .card, .forgetPass .card{
     max-width: 500px;
+    background-image: url(../files/imgs/bg.jpg);
+    background-size: cover;
 }
-.signIn .card .exit,.signUp .card .exit{
+.signIn .card-layout,.signUp .card-layout ,.forgetPass .card-layout{
+    background-color: rgba(51, 51, 51, 0.701);
+    z-index: -2;
+}
+.signIn .card .exit,.signUp .card .exit, .forgetPass .card .exit{
     top: 1rem;
     right: 1rem;
     transition: var(--main-transition);
 }
-.signIn .card .exit:hover,.signUp .card .exit:hover{
-    color: #f44336cd;
+.signIn .card .exit:hover,.signUp .card .exit:hover,.forgetPass .card .exit:hover{
+    color: #f44336cd !important;
 }
-.signIn .card img,.signUp .card img{
-    width: 100px;
-    top: -40px;
-}
-.signIn .card h5,.signUp .card h5{
+.signIn .card h5,.signUp .card h5,.forgetPass .card h5{
     color: var(--main-color);
 }
 .signIn .card .card-body form input,
-.signUp .card .card-body form input{
+.signUp .card .card-body form input,
+.forgetPass .card .card-body form input{
     border:1px solid #ddd;
+    background-color: transparent;
+    color: var(--main-color);
+}
+.signIn .card .card-body form input::placeholder,
+.signUp .card .card-body form input::placeholder,
+.forgetPass .card .card-body form input::placeholder{
+    color: white;
 }
 .signIn .card .card-body form .eye,
 .signUp .card .card-body form .eye,
@@ -289,16 +293,20 @@ nav img{
     opacity: 0;
 }
 .signIn .card .card-body form .remember-me,
-.signUp .card .card-body form .terms-of-use{
+.signUp .card .card-body form .terms-of-use a{
     font-size: 0.9rem;
     color: var(--main-color);
+}
+.signUp .card .card-body form .terms-of-use{
+    font-size: 0.9rem;
 }
 .signIn .card .card-body form .forget,
 .signUp .card .card-body form .have-acc{
     font-size: 0.8rem;
 }
 .signIn .card .card-body form .login,
-.signUp .card .card-body form .reg{
+.signUp .card .card-body form .reg,
+.forgetPass .card .card-body form .forget-btn{
     background-color: var(--main-color);
 }
 .signUp .card .card-body form .reg{
@@ -306,19 +314,24 @@ nav img{
     cursor: default;
     transition: var(--main-transition);
 }
+.forgetPass .card-body .back-log,.forgetPass .card-body .back-log svg{
+    transition: var(--main-transition) padding;
+}
+.forgetPass .card-body .back-log:hover{
+    color: var(--main-color) !important;
+}
+.forgetPass .card-body .back-log:hover svg{
+    padding-right: 0.4rem;
+}
 
 @media (max-width: 767.98px) {
     .signIn .card,
-    .signUp .card{
+    .signUp .card,
+    .forgetPass .card{
         width: 75% !important;
     }
 }
 @media (max-width: 300px) {
-    .signIn .card img,
-    .signUp .card img{
-        width: 65px;
-        top: -32px;
-    }
     .signIn .card .card-body form .eye,
     .signUp .card .card-body form .eye,
     .signIn .card .card-body form .eye-slash,
@@ -330,7 +343,7 @@ nav img{
 
 /* start footer */
 footer .layout{
-    background-color: rgb(40 45 59);
+    background-color: #dbd8e3;
     width: 300%;
     height: 100%;
     transform: rotate(6deg);
@@ -343,11 +356,17 @@ footer .links li a,footer p{
 }
 footer .links li a:not(.support):hover{
     padding-left: 10px;
+    color: var(--secondary-color);
 }
 footer .links li .support{
-    text-shadow: black 6px 10px 8px;
+    text-shadow: var(--black-color) 6px 10px 8px;
 }
 footer .links li .support:hover{
     text-shadow: #fafafa 2px 2px 13px;
+    color: var(--secondary-color);
+}
+footer .icons a:hover svg{
+    color: var(--secondary-color);
+    transition: var(--main-transition);
 }
 /* end footer */
