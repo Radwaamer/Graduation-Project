@@ -3,7 +3,7 @@ function createFooter(){
     let footerText=`
     <div class="layout position-absolute top-0"></div>
     <div class="container pt-5 position-relative">
-        <div class="row">
+        <div class="row pt-4">
             <div class="col-md-6">
                 <ul class="links black-color">
                     <li class="mb-3"><a class="black-color fw-bold support" href="mailto:rororado44@gmail.com"><span class="fs-5">Support</span> @ secure labs .com</a></li>
@@ -19,6 +19,7 @@ function createFooter(){
                     <a href="#"><i class="fa-brands fa-twitter black-color fs-4 me-3"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in black-color fs-4"></i></a>
                 </div>
+                <img class="img-fluid mb-3" src="../files/imgs/qr code.svg" role="button" alt="">
                 <p class="text-black-50">© 2022 secure labs </p>
             </div>
         </div>

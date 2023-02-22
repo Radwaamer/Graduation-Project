@@ -22,4 +22,19 @@
     bottom: -177px;
     background-color: #ffffff1a;
 }
+
+@media (max-width: 992px) {
+    .questions .faq{
+        margin-top: -3rem;
+    }
+    .questions .faq img{
+        position: relative !important;
+        text-align: center;
+        width: 30rem;
+        top: 0;
+    }
+    .questions .faq > ul{
+        margin-right: 0;
+    }
+}
 /* end questions */

@@ -33,7 +33,6 @@ function createHeader(){
                         <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/team.html">team</a></li>
                         <li class="mb-1"><a class="dropdown-item nav-link black-color" href="kfk">privacy</a></li>
                         <li class="mb-1"><a class="dropdown-item nav-link black-color" href="f,v,mc">terms</a></li>
-                        <li><a class="dropdown-item nav-link black-color" href="fmvm,r">our mission</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

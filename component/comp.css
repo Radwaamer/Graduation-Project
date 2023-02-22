@@ -245,27 +245,27 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
 /* end nav bar */
 
 /* start sign in and sign up */
-.signIn,.signUp,.forgetPass{
+.signIn,.signUp,.forgetPass,.qr{
     z-index: 1000;
 }
-.signIn .layout,.signUp .layout,.forgetPass .layout{
+.signIn .layout,.signUp .layout,.forgetPass .layout,.qr .layout{
     background-color: rgba(51, 51, 51, 0.701);
 }
-.signIn .card,.signUp .card, .forgetPass .card{
+.signIn .card,.signUp .card, .forgetPass .card,.qr .card{
     max-width: 500px;
     background-image: url(../files/imgs/bg.jpg);
     background-size: cover;
 }
-.signIn .card-layout,.signUp .card-layout ,.forgetPass .card-layout{
+.signIn .card-layout,.signUp .card-layout ,.forgetPass .card-layout, .qr .card-layout{
     background-color: rgba(51, 51, 51, 0.701);
     z-index: -2;
 }
-.signIn .card .exit,.signUp .card .exit, .forgetPass .card .exit{
+.signIn .card .exit,.signUp .card .exit, .forgetPass .card .exit,.qr .card .exit{
     top: 1rem;
     right: 1rem;
     transition: var(--main-transition);
 }
-.signIn .card .exit:hover,.signUp .card .exit:hover,.forgetPass .card .exit:hover{
+.signIn .card .exit:hover,.signUp .card .exit:hover,.forgetPass .card .exit:hover,.qr .card .exit:hover{
     color: #f44336cd !important;
 }
 .signIn .card h5,.signUp .card h5,.forgetPass .card h5{
@@ -330,7 +330,8 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
 @media (max-width: 767.98px) {
     .signIn .card,
     .signUp .card,
-    .forgetPass .card{
+    .forgetPass .card,
+    .qr .card{
         width: 75% !important;
     }
 }
@@ -367,6 +368,9 @@ footer .links li .support{
 footer .links li .support:hover{
     text-shadow: #fafafa 2px 2px 13px;
     color: var(--secondary-color);
+}
+footer img{
+    width: 7rem;
 }
 footer .icons a:hover svg{
     color: var(--secondary-color);

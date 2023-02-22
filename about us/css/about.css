@@ -7,3 +7,13 @@
 .about .image{
     max-width: 320px;
 }
+
+@media (max-width: 992px) {
+    .about .text{
+        box-shadow: none;
+        border-radius: 1rem;
+    }
+    .about .image{
+        max-width: 25rem;
+    }
+}
