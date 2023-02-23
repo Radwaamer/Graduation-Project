@@ -9,6 +9,7 @@
 .questions .faq img{
     width: 39rem;
     top: -7rem;
+    transform: rotateZ(7deg);
 }
 .questions .faq > ul{
     margin-right: 24rem;
@@ -21,6 +22,7 @@
     transition: var(--main-transition);
     bottom: -177px;
     background-color: #ffffff1a;
+    margin-right: 4rem;
 }
 
 @media (max-width: 992px) {
@@ -34,6 +36,9 @@
         top: 0;
     }
     .questions .faq > ul{
+        margin-right: 0;
+    }
+    .questions .solution{
         margin-right: 0;
     }
 }
