@@ -44,6 +44,10 @@ function createHeader(){
             <button class="btn sign-in-btn bg-white px-4 fw-semibold">Sign In</button>
             <button class="btn sign-up-btn bg-white px-4 fw-semibold">Sign Up</button>
         </div>
+        <div class="profile ms-3" role="button">
+            <img class="rounded-circle" src="../files/imgs/profile.png" alt="name">
+            <div class="info position-absolute text-center rounded-4 text-capitalize p-4 white-color"></div>
+        </div>
     </div>
 </nav>`
     let header=document.createElement("header");

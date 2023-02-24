@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 :root{
     --main-color: #3ab8ff;
-    --secondary-color:rgba(22,10,60,1);
+    --secondary-color: rgba(22,10,60,1);
     --black-color: #3e4a61;
+    --white-color :#dbd8e3;
     --main-transition: 0.3s;
 }
 .black-color{
     color: var(--black-color);
+}
+.white-color{
+    background-color: var(--white-color);
 }
 *{
     box-sizing: border-box;
@@ -279,7 +283,7 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
 .signIn .layout,.signUp .layout,.forgetPass .layout,.qr .layout{
     background-color: rgba(51, 51, 51, 0.701);
 }
-.signIn .card,.signUp .card, .forgetPass .card,.qr .card{
+.signIn .card,.signUp .card, .forgetPass .card,.qr .card, .resetPass .card{
     max-width: 500px;
     background-image: url(../files/imgs/bg.jpg);
     background-size: cover;
@@ -287,6 +291,9 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
 .signIn .card-layout,.signUp .card-layout ,.forgetPass .card-layout, .qr .card-layout{
     background-color: rgba(51, 51, 51, 0.701);
     z-index: -2;
+}
+.resetPass .card-layout{
+    background-color: rgba(51, 51, 51, 0.701);
 }
 .signIn .card .exit,.signUp .card .exit, .forgetPass .card .exit,.qr .card .exit{
     top: 1rem;
@@ -296,31 +303,35 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
 .signIn .card .exit:hover,.signUp .card .exit:hover,.forgetPass .card .exit:hover,.qr .card .exit:hover{
     color: #f44336cd !important;
 }
-.signIn .card h5,.signUp .card h5,.forgetPass .card h5{
+.signIn .card h5,.signUp .card h5,.forgetPass .card h5,.resetPass .card h5{
     color: var(--main-color);
 }
 .signIn .card .card-body form input,
 .signUp .card .card-body form input,
-.forgetPass .card .card-body form input{
+.forgetPass .card .card-body form input,
+.resetPass .card .card-body form input{
     border:1px solid #ddd;
     background-color: transparent;
     color: var(--main-color);
 }
 .signIn .card .card-body form input::placeholder,
 .signUp .card .card-body form input::placeholder,
-.forgetPass .card .card-body form input::placeholder{
+.forgetPass .card .card-body form input::placeholder,
+.resetPass .card .card-body form input::placeholder{
     color: white;
 }
 .signIn .card .card-body form .eye,
 .signUp .card .card-body form .eye,
+.resetPass .card .card-body form .eye,
 .signIn .card .card-body form .eye-slash,
-.signUp .card .card-body form .eye-slash{
+.signUp .card .card-body form .eye-slash,
+.resetPass .card .card-body form .eye-slash{
     right: 20px;
 }
-#passwordHelpBlock,.signUp .card .card-body form .pass-miss{
+#passwordHelpBlock,.signUp .card .card-body form .pass-miss,.resetPass .card .card-body form .pass-miss{
     font-size: 0.7rem;
 }
-.signUp .card .card-body form .pass-miss{
+.signUp .card .card-body form .pass-miss,.resetPass .card .card-body form .pass-miss{
     opacity: 0;
 }
 .signIn .card .card-body form .remember-me,
@@ -337,7 +348,8 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
 }
 .signIn .card .card-body form .login,
 .signUp .card .card-body form .reg,
-.forgetPass .card .card-body form .forget-btn{
+.forgetPass .card .card-body form .forget-btn,
+.resetPass .card .card-body form .reset{
     background-color: var(--main-color);
 }
 .signUp .card .card-body form .reg{
@@ -359,23 +371,56 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
     .signIn .card,
     .signUp .card,
     .forgetPass .card,
-    .qr .card{
+    .qr .card,
+    .resetPass .card{
         width: 75% !important;
     }
 }
 @media (max-width: 300px) {
     .signIn .card .card-body form .eye,
     .signUp .card .card-body form .eye,
+    .reset .card .card-body form .eye,
     .signIn .card .card-body form .eye-slash,
-    .signUp .card .card-body form .eye-slash{
+    .signUp .card .card-body form .eye-slash,
+    .reset .card .card-body form .eye-slash{
         right: 10px;
     }
 }
 /* end sign in and sign up */
 
+/* start profile header */
+.profile img{
+    width: 3rem;
+    height: 3rem;
+}
+header .info{
+    top: 8rem;
+    right: 3rem;
+    width: 17rem;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: var(--main-transition);
+    z-index: 1000;
+}
+header .info img{
+    width: 5rem;
+    height: 5rem;
+    top: -3rem;
+}
+header .info.active{
+    transform: scale(1);
+}
+header .info .user{
+    color: var(--black-color);
+    font-size: 18px;
+}
+header .info button,header .info button:hover{
+    background-color: var(--secondary-color);
+}
+/* end profile header */
+
 /* start footer */
 footer .layout{
-    background-color: #dbd8e3;
     width: 300%;
     height: 100%;
     transform: rotate(6deg);

@@ -1,7 +1,7 @@
 // create footer
 function createFooter(){
     let footerText=`
-    <div class="layout position-absolute top-0"></div>
+    <div class="layout position-absolute top-0 white-color"></div>
     <div class="container pt-5 position-relative">
         <div class="row pt-4">
             <div class="col-md-6">
