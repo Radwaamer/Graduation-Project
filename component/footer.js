@@ -18,8 +18,8 @@ function createFooter(){
                             <li class="mb-1"><a class="black-color d-block w-100" href="../about us/about.html">about us</a></li>
                             <li class="mb-1"><a class="black-color d-block w-100" href="../about us/mission.html">Mission</a></li>
                             <li class="mb-1"><a class="black-color d-block w-100" href="../about us/team.html">team</a></li>
-                            <li class="mb-1"><a class="black-color d-block w-100" href="">privacy</a></li>
-                            <li class="mb-1"><a class="black-color d-block w-100" href="">terms</a></li>
+                            <li class="mb-1"><a class="black-color d-block w-100" href="../about us/privacy.html">privacy</a></li>
+                            <li class="mb-1"><a class="black-color d-block w-100" href="../about us/terms.html">terms</a></li>
                         </div>
                     </div>
                 </ul>

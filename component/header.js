@@ -31,8 +31,8 @@ function createHeader(){
                         <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/about.html">Who we are</a></li>
                         <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/mission.html">our mission</a></li>
                         <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/team.html">team</a></li>
-                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="kfk">privacy</a></li>
-                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="f,v,mc">terms</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/privacy.html">privacy</a></li>
+                        <li class="mb-1"><a class="dropdown-item nav-link black-color" href="../about us/terms.html">terms</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
