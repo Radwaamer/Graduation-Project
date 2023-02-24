@@ -1,27 +1,24 @@
 /* start labs */
-.labs h2{
-    color: var(--main-color);
-}
 .labs .parent .stick {
+    height: 85%;
     width: 0.938rem;
-    height: 60%;
-    background: var(--main-color);
+    background: var(--secondary-color);
     border-radius: 32.6816px;
 }
 
 .labs .child .stick2{
-    width: 0.838rem;
+    width: 0.438rem;
     height: 4rem;
     left: 4rem;
-    background: var(--main-color);
+    background: var(--secondary-color);
     border-radius: 32.6816px;
 }
 
 .child .btn{
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
 }
 
 .icon{
-    color: var(--main-color);
+    color: var(--secondary-color);
 }
 /* end labs */

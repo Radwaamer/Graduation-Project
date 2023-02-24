@@ -45,12 +45,12 @@ function increase(){
     setInterval(function(){
         document.querySelectorAll(".landing .row span")[1].innerHTML=i.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         i++;
-    },2500);
+    },1500);
     let x=223169978;
     setInterval(function(){
         document.querySelectorAll(".landing .row span")[3].innerHTML=x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         x++;
-    },1500)
+    },1000)
     if(i=11936681242+999){
         i=11936681242;
     };

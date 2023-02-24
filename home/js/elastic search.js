@@ -26,13 +26,10 @@ function doSearch () {
         xmlHttp.send(JSON.stringify(body));
         var response = xmlHttp.responseText;
 
-
-        document.querySelector(".landing").innerHTML+=`
-            <template id="my-template"></template>`;
-
+        
         if(JSON.parse(response)["hits"]["total"]["value"]==0){
             document.getElementById("my-template").innerHTML=`
-                <swal-title color="#333">
+                <swal-title>
                     Good news
                 </swal-title>
                 <swal-html>

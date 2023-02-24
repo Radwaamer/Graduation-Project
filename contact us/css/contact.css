@@ -1,4 +1,18 @@
 /* start contact us */
+.container  .contact-form{
+  background: linear-gradient(89.91deg, #FFFFFF 0.08%, #FFFFFF 43.99%, #11032A 49.44%);
+border-radius: 10px;
+}
+.contact .contact-form form .form-control{
+  border: 2px solid #636363;
+border-radius: 10px;
+}
+.contact .contact-form .image{
+  width: 41%;
+  /* top: 20%; */
+  height: 20rem;
+  /* left: 2rem; */
+}
 .contact .contact-form form .form-control:focus{
   box-shadow: none;
   border-color: var(--main-color);
@@ -14,11 +28,3 @@
 }
 /* end contact us */
 
-/* start our contacts */
-.contacts h2{
-  color: var(--main-color);
-}
-.contacts .links .row .info svg{
-  border-color: var(--main-color) !important;
-}
-/* end our contacts */

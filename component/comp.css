@@ -39,6 +39,9 @@ html::-webkit-scrollbar-thumb:hover{
 body{
     font-family: 'Open Sans', sans-serif;
     background: rgb(22,10,60);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 a{
     text-decoration: none;
@@ -56,7 +59,11 @@ p{
     color: var(--main-color);
     margin-bottom: 1.5rem;
 }
-
+@media (max-width: 1200px) {
+    html{
+        font-size: 90%;
+    }
+}
 @media (max-width: 500px) {
     html{
         font-size: 80%;
@@ -237,9 +244,30 @@ nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
     nav .navbar-collapse li{
         border-top: 1px solid rgb(112 112 112);
     }
-    nav .navbar-collapse li:hover a{
-        transition: var(--main-transition);
-        transform: translateX(10px);
+    nav ul a:hover,nav ul a.active{
+        color: white !important;
+        background-color: transparent !important;
+    }
+    nav .dropdown-menu{
+        width: 100%;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        border: none;
+        border-radius: 0;
+        background-color: var(--black-color) !important;
+    }
+    nav .dropdown-menu li{
+        border-top: none;
+        padding-left: 2rem;
+        border-top: 1px solid rgb(112 112 112);
+        margin-bottom: 0 !important;
+    }
+    nav .dropdown-menu a{
+        color: white !important;
+    }
+    nav .dropdown-menu a:hover,nav .dropdown-menu a.active{
+        background-color: transparent !important;
     }
 }
 /* end nav bar */

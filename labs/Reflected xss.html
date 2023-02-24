@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- reset options -->
-    <link rel="stylesheet" href="../files/css/normalize.css">
-    <!-- font awesome stylesheet -->
-    <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap"
-    rel="stylesheet"
-  />
-    <link rel="stylesheet" href="../files/css/all.min.css">
-    <!-- bootstrap stylesheet -->
-    <link rel="stylesheet" href="../files/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../files/css/bootstrap.min.css.map">
-    <!-- component css page -->
-    <link rel="stylesheet" href="../component/comp.css">
-    <!-- main css page -->
-    <link rel="stylesheet" href="css/Reflected.css">
-    <!-- page title -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- reset options -->
+  <link rel="stylesheet" href="../files/css/normalize.css">
+  <!-- font awesome stylesheet -->
+  <link rel="stylesheet" href="../files/css/all.min.css">
+  <!-- bootstrap stylesheet -->
+  <link rel="stylesheet" href="../files/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../files/css/bootstrap.min.css.map">
+  <!-- component css page -->
+  <link rel="stylesheet" href="../component/comp.css">
+  <!-- main css page -->
+  <link rel="stylesheet" href="css/Reflected.css">
+  <!-- page title -->
     <title>Reflected xss</title>
 </head>
 <body>
+  <!-- loader -->
+  <script src="../component/loader.js"></script>
 
-  
-           
-  <div class="container w-100 h-100 pb-5 mb-5   ">
- <h2  class="  text fs-2 fw-semibold ms-5 " >Reflected xss <a href="lab description.html"> <br><span class=" text2 fs-5 ">Back to lab description <small>>>></small> </span> </a>  </h2>
-
-       <div class="  col-lg-12  position-relative   d-flex align-items-center justify-content-center text-center   text-capitalize   mb-3 "  > 
-        <div class="parent rounded  d-flex align-items-center justify-content-center text-center"> 
-         <p class="  fs-5    align-items-center justify-content-center text-center  fw-semibold text-white ">
-        <span class=" fs-1 fw-bolder">Xss</span>  <br> <span class="fs-6">  Reflected</span>  </p>
-         </div>
-       </div>
- 
-   </div>
-<div class=" searchbar text-center d-flex justify-content-center position-relative  m-5">
-   
-       <input class="rounded-pill p-3 w-75  border-0 pe-5  "  type="text" placeholder="Search The Blog..."  data-search>
-       <i class=" SearchIcon position-absolute top-50 translate-middle-y fa-solid fs-4 fa-magnifying-glass text-black-50 "role="button"
-        type="search" name="search-blog" id="search"  ></i></div>
-<div class="feature w-100 h-100 pb-5 mb-5 d-flex justify-content-center align-items-center ">
-        <div class="user-cards w-50 text-center  "  data-user-cards-container></div>
-        <template data-user-template>
-          <div class="card">
-            <div class="header" data-header></div>
-            <div class="body" data-body></div>
+  <div class="xss d-flex flex-column justify-content-center align-items-center my-5">
+    <div class="container h-100 mb-2 justify-content-center align-items-center">
+        <h2  class="text fs-2 fw-semibold ms-5 mb-5">Reflected xss<a href="lab description.html"><br><span class="text2 fs-5">Back to lab description <small class="fs-6">>>></small> </span> </a>  </h2>
+          <div class=" carry position-relative d-flex align-items-center justify-content-center text-center text-capitalize mb-3"> 
+            <div class="parent rounded-4 d-flex align-items-center justify-content-center text-center"> 
+              <p class="fs-5 align-items-center justify-content-center text-center fw-bold">
+                <span class="textbox fs-1 fw-bolder">Xss</span> <br> <span class="textbox fw-bold fs-6">Reflected</span>
+              </p>
+            </div>
           </div>
-        </template>
-</div>
-   
-    <!-- font awesome js -->
-    <script src="../files/js/all.min.js"></script>
-    <script src="https://kit.fontawesome.com/c7495e3692.js" crossorigin="anonymous"></script>
-    <!-- bootstrap js file -->
-    <script src="../files/js/bootstrap.bundle.min.js"></script>
-    <script src="../files/js/bootstrap.bundle.min.js.map"></script>
-    <!-- header -->
-    <script src="../component/header.js"></script>
-    <!-- main js file -->
-    <script src="js/Reflected.js"></script>
-    <!-- footer -->
-    <script src="../component/footer.js"></script>
+    </div>
+
+    <form class="position-relative mt-4 w-50 justify-content-center align-items-center d-flex" >
+      <input class="rounded-pill p-3 w-100 border-0 ps-4 pe-5"type="text" placeholder="Search The Blog..." data-search>
+        <i class="SearchIcon position-absolute top-50 p-3 translate-middle-y fa-solid fs-4 fa-magnifying-glass text-black-50 "role="button"
+        type="search" name="search-blog" id="search"></i>
+    </form>
+  </div>
 
 
-
+  <!-- font awesome js -->
+  <script src="../files/js/all.min.js"></script>
+  <script src="https://kit.fontawesome.com/c7495e3692.js" crossorigin="anonymous"></script>
+  <!-- bootstrap js file -->
+  <script src="../files/js/bootstrap.bundle.min.js"></script>
+  <script src="../files/js/bootstrap.bundle.min.js.map"></script>
+  <!-- header -->
+  <script src="../component/header.js"></script>
+  <!-- sign in -->
+  <script src="../component/sign in.js"></script>
+  <!-- sign up -->
+  <script src="../component/sign up.js"></script>
+  <!-- forget password -->
+  <script src="../component/forget password.js"></script>
+  <!-- main js file -->
+  <script src="js/Reflected.js"></script>
+  <!-- footer -->
+  <script src="../component/footer.js"></script>
+  <!-- qr code -->
+  <script src="../component/qr code.js"></script>
+  <!-- arrow -->
+  <script src="../component/arrow.js"></script>
 </body>
 </html>
