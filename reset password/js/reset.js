@@ -17,17 +17,6 @@ function eyeIcon(){
 };
 eyeIcon();
 
-// password length
-function passLength(){
-    let inputProgress=document.querySelector(".progress input");
-    let progress=document.querySelector(".progress span");
-    let progressNumber=document.querySelector(".progress p");
-    inputProgress.oninput=()=>{
-        progressNumber.innerHTML=35-inputProgress.value.length;
-        progress.style.width=(inputProgress.value.length/35)*100+"%";
-    }
-}
-
 // repeat password
 function repeatPass(){
     let confirmMsg=document.querySelector(".resetPass .card .card-body form .pass-miss");
@@ -54,5 +43,11 @@ function repeatPass(){
             confirmMsg.style.opacity="0";
         }
     };
+    document.querySelector(".resetPass .card .card-body form").addEventListener("submit",(e)=>{
+        if(confirmPass.value!==pass.value){
+            e.preventDefault();
+            confirmPass.focus();
+        };
+    });
 };
 repeatPass();
