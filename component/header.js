@@ -9,7 +9,6 @@ function createHeader(){
         </div>
         <div class="profile me-3 d-flex d-lg-none ms-auto justify-content-end" role="button">
             <img class="rounded-circle" src="../files/imgs/profile.png" alt="name">
-            <div class="info position-absolute text-center rounded-4 text-capitalize p-4 white-color"></div>
         </div>
         <button class="navbar-toggler border-white px-3 py-2" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -50,8 +49,8 @@ function createHeader(){
         </div>
         <div class="profile ms-3 d-none d-lg-flex justify-content-end" role="button">
             <img class="rounded-circle" src="../files/imgs/profile.png" alt="name">
-            <div class="info position-absolute text-center rounded-4 text-capitalize p-4 white-color"></div>
         </div>
+        <div class="info position-absolute text-center rounded-4 text-capitalize p-4 white-color"></div>
     </div>
 </nav>`
     let header=document.createElement("header");

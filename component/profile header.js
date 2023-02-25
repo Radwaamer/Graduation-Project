@@ -1,9 +1,7 @@
 //view profile icon
 document.querySelectorAll("header nav .profile").forEach(profile=>{
     profile.addEventListener("click",()=>{
-        document.querySelectorAll("header .info").forEach(info=>{
-            info.classList.toggle("active");
-        });
+        document.querySelector("header .info").classList.toggle("active");
     });
 });
 
@@ -24,8 +22,7 @@ function getInfo(){
                 sign.classList.remove("d-lg-flex")
             });
             let login= JSON.parse(this.responseText);
-            document.querySelectorAll("header .info").forEach(info=>{
-                info.innerHTML=
+            document.querySelector("header .info").innerHTML=
                 `<img class="rounded-circle position-absolute start-50 translate-middle-x" src="${login.img}" alt="${login.username}">
                 <p class="user fw-bold black-color mt-3 mb-4">${login.username}</p>
                 <button class="btn border-0 main-btn w-100 text-white py-2 d-flex align-items-center justify-content-center gap-2">
@@ -36,7 +33,6 @@ function getInfo(){
                     <i class="fs-5 fa-solid fa-arrow-right-from-bracket"></i>
                     <p>Log Out</p>
                 </button>`
-            })
         }
         else if(this.status==404 && this.readyState==4){
             document.querySelectorAll("header nav .profile").forEach(profile=>{
