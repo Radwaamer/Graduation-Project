@@ -1,11 +1,15 @@
 // create header section
 function createHeader(){
-    let headerText=`<nav class="navbar navbar-expand-lg py-0">
+    let headerText=`<nav class="navbar navbar-expand-lg py-2">
     <div class="container">
         <a class="navbar-brand overflow-hidden py-3" href="../home/home.html"><img src="../files/imgs/logo.png" alt="Secure Labs"></a>
         <div class="sign d-flex d-lg-none gap-2 me-4 ms-auto justify-content-end">
             <button class="btn sign-in-btn bg-white px-4 fw-semibold">Sign In</button>
             <button class="btn sign-up-btn bg-white px-4 fw-semibold">Sign Up</button>
+        </div>
+        <div class="profile me-3 d-flex d-lg-none ms-auto justify-content-end" role="button">
+            <img class="rounded-circle" src="../files/imgs/profile.png" alt="name">
+            <div class="info position-absolute text-center rounded-4 text-capitalize p-4 white-color"></div>
         </div>
         <button class="navbar-toggler border-white px-3 py-2" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -44,7 +48,7 @@ function createHeader(){
             <button class="btn sign-in-btn bg-white px-4 fw-semibold">Sign In</button>
             <button class="btn sign-up-btn bg-white px-4 fw-semibold">Sign Up</button>
         </div>
-        <div class="profile ms-3" role="button">
+        <div class="profile ms-3 d-none d-lg-flex justify-content-end" role="button">
             <img class="rounded-circle" src="../files/imgs/profile.png" alt="name">
             <div class="info position-absolute text-center rounded-4 text-capitalize p-4 white-color"></div>
         </div>
