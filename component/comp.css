@@ -414,7 +414,7 @@ header .info .user{
     color: var(--black-color);
     font-size: 18px;
 }
-header .info button,header .info button:hover{
+header .info a,header .info a:hover{
     background-color: var(--secondary-color);
 }
 /* end profile header */
