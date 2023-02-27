@@ -51,7 +51,7 @@ function doSearch() {
                     );
                     xmlHttp.send(JSON.stringify(body));
                     var response = xmlHttp.responseText;
-                    
+
                     if (JSON.parse(response)["hits"]["total"]["value"] == 0) {
                         document.getElementById("my-template").innerHTML = `
                             <swal-title>
