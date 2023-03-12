@@ -5,8 +5,8 @@
   "background_color": "rgba(22,10,60,1)",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/Graduation-Project/",
+  "start_url": "/Graduation-Project/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
