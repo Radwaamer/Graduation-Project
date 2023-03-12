@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset options -->
+    <link rel="stylesheet" href="../files/css/normalize.css">
+    <!-- font awesome stylesheet -->
+    <link rel="stylesheet" href="../files/css/all.min.css">
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="../files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../files/css/bootstrap.min.css.map">
+    <!-- component css page -->
+    <link rel="stylesheet" href="../component/comp.css">
+    <!-- main css page -->
+    <link rel="stylesheet" href="css/user.css">
+    <!-- page title -->
+    <title>User Profile</title>
+    <!-- manifest file -->
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#3ab8ff">
+</head>
+<body>
+  <!-- loader -->
+  <script src="../component/loader.js"></script>
+
+  <!-- start user profile -->
+  <div class="userProfile d-flex  my-5  flex-column align-items-center justify-content-center">
+    <div class="container ">
+        <h2 class="profile text-white fs-4 my-4">
+            User Profile
+        </h2>
+        <h3 class="content text-white fs-6 mb-5">
+            Hello <br> This is your profile page. you can manage your profile and update your data.
+        </h3>
+
+        <div class="grid  d-flex ">
+        
+                <div class="card w-50 d-flex border-0"> 
+                <div class="card-body w-100 py-5 my-5  g-col-6 g-col-md-4 position-relative">
+                    <h3 class="profileInf fw-semibold fs-5 text-black "> Profile Information</h3>
+                    <p class="text  mb-5 fw-semibold "> Update your account's profile information and email address</p>
+                    <form action="">
+                            <h3 class="userName fw-semibold fs-5 text-black text-capitalize ">username </h3>
+                        <input class=" input w-100 p-2 border-start-0 border-top-0 border-end-0 my-3" type="text" name="name"  placeholder="username"  required>
+                        <h3 class="userName fw-semibold fs-5 text-black text-capitalize ">Email </h3>
+                        <input class=" input w-100 p-2 border-start-0 border-top-0 border-end-0 my-3" type="email" name="email"  placeholder="Email"  required>
+                        <div class="button d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-primary ">Update</button></div>
+                        <div class="hr "></div>
+                        <h3 class="updatePass fw-semibold fs-5  ">Update Password</h3>
+                        <p class="text  mb-5 fw-semibold  "> Ensure your account is using a long random password to stay secure. </p>
+                        <h3 class="userName fw-semibold fs-5 text-black text-capitalize ">Current Password</h3>
+                        <input  type="password" class=" input w-100 p-1 border-start-0 border-top-0 border-end-0 my-3" name="password" "   required>
+                        <h3 class="userName fw-semibold fs-5 text-black text-capitalize ">New Password</h3>
+                            <input class=" input w-100 p-1 border-start-0 border-top-0 border-end-0 my-3" type="password" name="password" "  required>
+                        <h3 class="userName fw-semibold fs-5 text-black text-capitalize ">Confirm Password</h3>
+                            <input class=" input w-100 p-1 border-start-0 border-top-0 border-end-0 my-3" type="password" name="password" "   required>
+                            <div class="button d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn btn-primary ">Update</button>
+                            </div>
+                    </form>
+                </div>
+                </div>
+                <div class="grid2 w-50 d-flex flex-column pe-3">
+                <div class="card h-100 w-100 my-5 mx-5 bg-none  border-0">  
+                    <div class="card-body w-100 position-relative my-5 mx-5">
+                        <img class="img d-flex align-items-center justify-content-center w-50" src="./imgs/Group 298.png" alt="">
+                        <h3 class="profileInf fw-semibold fs-5 text-black d-flex  justify-content-center align-items-center top-50 "> Rwan Ashraf</h3>
+                        <label class=" d-flex justify-content-center align-items-center top-50" >
+                        <button type="file" class="btn btn-primary uphoto ">Upload photo</button></label>
+                    </div>
+                </div>
+                
+                <div class="card h-75 w-100 my-5 mx-5 bg-none  border-0">  
+                    <div class="card-body w-100  position-relative my-5 mx-5">
+                        <h3 class="profileInf fw-semibold fs-6  d-flex   ">Delete Account</h3>
+                        <p class="text text-black mb-5"> Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.</p>
+                        <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary  Daccount1 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Delete Account
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog   modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h3 class=" text modal-title fs-5 text-capitalize text-black id="exampleModalLabel"> are you sure you want to delete your account? </h3>
+                                    <p class="text text-black mb-5"> </p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class=" text "> Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.</span>
+                                    <input type="password"  class="input22 w-100" placeholder= "Password "> 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary Daccount2">Delete Account</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+
+
+
+ 
+  <!-- end user profile -->
+
+    <!-- font awesome js -->
+    <script src="../files/js/all.min.js"></script>
+    <script src="https://kit.fontawesome.com/c7495e3692.js" crossorigin="anonymous"></script>
+    <!-- bootstrap js file -->
+    <script src="../files/js/bootstrap.bundle.min.js"></script>
+    <script src="../files/js/bootstrap.bundle.min.js.map"></script>
+    <!-- header -->
+    <script src="../component/header.js"></script>
+    <!-- sign in -->
+    <script src="../component/sign in.js"></script>
+    <!-- sign up -->
+    <script src="../component/sign up.js"></script>
+    <!-- forget password -->
+    <script src="../component/forget password.js"></script>
+    <!-- profile header -->
+    <script src="../component/profile header.js"></script>
+    <!-- main js file -->
+    <script src="js/contact.js"></script>
+    <!-- footer -->
+    <script src="../component/footer.js"></script>
+    <!-- qr code -->
+    <script src="../component/qr code.js"></script>
+    <!-- arrow -->
+    <script src="../component/arrow.js"></script>
+    <!-- component js file -->
+    <script src="../files/js/app.js"></script>
+</body>
+</html>
