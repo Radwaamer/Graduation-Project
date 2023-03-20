@@ -1,9 +1,8 @@
-// console.log(document.cookie)
 var form= document.getElementById("xss-form");
 form.addEventListener("submit",function(e){
     e.preventDefault();
     var fname= document.forms["xss-name"]["fname"].value.trim();
-    fetch("http://localhost/graduation-projecttt/labs/backend/xss.php", {
+    fetch("http://localhost/graduation-project/labs/backend/xss.php", {
      
     // Adding method type
     method: "POST",
