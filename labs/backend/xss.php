@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 header("Content-Type:Application/json; Charset=UTF-8");
 header("Access-Control-Allow-Origin:*");
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   $all=[$cookie,$response];
 
-  echo json_encode($all);
+  // echo json_encode($all);
 }
 else {
   // Return error message
@@ -31,4 +31,4 @@ else {
 }
 
 
-?>
+?> -->

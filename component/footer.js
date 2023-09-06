@@ -6,12 +6,12 @@ function createFooter(){
         <div class="row pt-4">
             <div class="col-md-6">
                 <ul class="links black-color">
-                    <li class="mb-4"><a class="black-color fw-bold support" href="mailto:rororado44@gmail.com"><span class="fs-5">Support</span> @ secure labs .com</a></li>
+                    <li class="mb-4"><a class="black-color fw-bold support" href="mailto:rororado44@gmail.com"><span class="fs-5">Support</span> @ secure space .com</a></li>
                     <div class="row text-capitalize">
                         <div class="col-6">
-                            <li class="mb-1"><a class="black-color d-block w-100" href="../home/home.html">Home</a></li>
+                            <li class="mb-1"><a class="black-color d-block w-100" href="../home/home.php">Home</a></li>
                             <li class="mb-1"><a class="black-color d-block w-100" href="../labs/labs.html">Labs</a></li>
-                            <li class="mb-1"><a class="black-color d-block w-100" href="../contact us/contact.html">Contact</a></li>
+                            <li class="mb-1"><a class="black-color d-block w-100" href="../contact us/contact.php">Contact</a></li>
                             <li class="mb-1"><a class="black-color d-block w-100" href="../faq/faq.html">FAQ</a></li>
                         </div>
                         <div class="col-6">
@@ -30,7 +30,7 @@ function createFooter(){
                     <a href="#"><i class="fa-brands fa-linkedin-in black-color fs-4"></i></a>
                 </div>
                 <img class="img-fluid mb-3" src="../files/imgs/qr code.svg" role="button" alt="">
-                <p class="text-black-50">© 2022 secure labs </p>
+                <p class="text-black-50">© 2022 secure space </p>
             </div>
         </div>
     </div>`;
